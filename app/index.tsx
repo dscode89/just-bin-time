@@ -8,13 +8,13 @@ const Home = () => {
 
   return (
     <View style={styles.loginContainer}>
-      <Text style={styles.titleText}>Just-Bin-Time</Text>
+      <Text style={styles.titleText}>Bin-A-While</Text>
       <Image
         source={require("../assets/images/bin.png")}
         style={styles.binImg}
       ></Image>
       <Pressable style={styles.pressableStyle}>
-        <Text style={styles.btnText}>VIEW SCHEDULE</Text>
+        <Text style={styles.btnText}>Login</Text>
       </Pressable>
     </View>
   );
@@ -32,22 +32,24 @@ const styles = StyleSheet.create({
     width: "60%",
     padding: 10,
     borderWidth: 2,
-    borderColor: "#2CCA43",
+    borderColor: "#04D9FF",
+    borderRadius: 4,
     justifyContent: "center",
     alignItems: "center",
   },
   btnText: {
     fontSize: 22,
-    color: "#2CCA43",
+    color: "#04D9FF",
   },
   binImg: {
     width: "100%",
     height: "60%",
+    marginBottom: 15,
   },
   titleText: {
     fontFamily: "spaceMono",
     fontSize: 40,
-    color: "#2CCA43",
+    color: "#04D9FF",
   },
 });
 
